@@ -12,6 +12,8 @@ function App(){
       <ButtonComponent/>
       <OrderedList/>
       <UnorderedList/>
+
+      
       <ImageComponent/>
       <ImageComponent/>
       <ImageComponent/>
