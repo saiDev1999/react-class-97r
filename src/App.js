@@ -1,5 +1,6 @@
 import ButtonComponent from "./components/functional-components/button/button-component"
 import ImageComponent from "./components/functional-components/image/image-component"
+import Profile from "./components/functional-components/jsx/jsx"
 import OrderedList from "./components/functional-components/list/order-list/ordered-list"
 import UnorderedList from "./components/functional-components/list/unorder-list/unordered-list"
 
@@ -9,15 +10,7 @@ function App(){
   return(
     <div>
       <h1>Hello World</h1>
-      <ButtonComponent/>
-      <OrderedList/>
-      <UnorderedList/>
-
-      
-      <ImageComponent/>
-      <ImageComponent/>
-      <ImageComponent/>
-      <ImageComponent/>
+    <Profile/>
 
 
 
