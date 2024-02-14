@@ -1,6 +1,8 @@
 import ButtonComponent from "./components/functional-components/button/button-component"
+import Naveen from "./components/functional-components/exports-imports/gallery"
 import ImageComponent from "./components/functional-components/image/image-component"
-import Profile from "./components/functional-components/jsx/jsx"
+import {Profile as Sai,Profile1 as Nithin,Profile2 as Jagadheesh} from "./components/functional-components/exports-imports/gallery"
+import RulesOfJsx from "./components/functional-components/jsx/rules"
 import OrderedList from "./components/functional-components/list/order-list/ordered-list"
 import UnorderedList from "./components/functional-components/list/unorder-list/unordered-list"
 
@@ -9,8 +11,10 @@ import UnorderedList from "./components/functional-components/list/unorder-list/
 function App(){
   return(
     <div>
-      <h1>Hello World</h1>
-    <Profile/>
+   <Naveen/>
+   <Sai/>
+   <Nithin/>
+   <Jagadheesh/>
 
     </div>
   )
