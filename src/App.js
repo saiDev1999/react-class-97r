@@ -5,20 +5,21 @@ import {Profile as Sai,Profile1 as Nithin,Profile2 as Jagadheesh} from "./compon
 import RulesOfJsx from "./components/functional-components/jsx/rules"
 import OrderedList from "./components/functional-components/list/order-list/ordered-list"
 import UnorderedList from "./components/functional-components/list/unorder-list/unordered-list"
+import Profile from "./components/functional-components/props/profile"
+import Parent from "./components/functional-components/props/parent"
 
 
 
 function App(){
   return(
     <div>
-   <Naveen/>
-   <Sai/>
-   <Nithin/>
-   <Jagadheesh/>
+  <Profile/>
+  <Parent/>
 
     </div>
   )
 }
+
 
 export default App
 
@@ -45,20 +46,6 @@ export default App
 // 1. Repeat the class 
 // 2. Create a table component with images 
 // 3. document on folder structure in react 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
