@@ -2,6 +2,14 @@ import FancyText from "./components/functional-components/styles/text"
 import "./App.css"
 import Content from "./components/functional-components/styles/bootstrap/content"
 import Spinner from "./components/functional-components/spinner/spinner"
+import NavBar from "./components/functional-components/navBar/nav-bar"
+import Corousel from "./components/functional-components/corousel/corousel"
+import ModalExample from "./components/functional-components/modals/modal"
+import AnimatedToast from "./components/functional-components/toast/toast"
+import ImageComponent from "./components/class-components /image/image-component"
+import YoutubeButton from "./components/class-components /youtubeButton/youtubeButton"
+import Products from "./components/class-components /products/products"
+
 
 
 
@@ -9,11 +17,12 @@ import Spinner from "./components/functional-components/spinner/spinner"
 function App(){
   return(
     <div>
-  {/* <Content/>
-  */}
-  <Spinner/>
+   <Products/>
+
 
     </div>
+ 
+  
   )
 }
 
