@@ -54,4 +54,7 @@ export default App
 // 3. document on folder structure in react 
 
 
+// Babel : it is transpiler which transpiles the jsx code(new synntax) to js code 
+
+
 

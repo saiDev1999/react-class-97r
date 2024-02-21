@@ -67,24 +67,94 @@ class Products extends Component{
       
         
       }
+    childToParent=(data)=>{
+
+        alert("child to parent")
+    }
+
+    increment =(data)=>{
+        console.log(data,this.state.products)
+    
+
+          let result =this.state.products.map(element=>{
+            if(element.id===data.id){
+                return {...this.state.products,price:element.price+100}
+            }else{
+                return element
+            }
+          })
+
+        
+
+
+
+
+       
+        this.setState({
+            products:result
+        },()=>{})
+
+    }
+
+    decrement =(data)=>{
+
+    }
     render(){
         return(
             <div>
                 <button  onClick={this.sortFunction} >Sort by price</button>
-                {
-                    this.state.products.map(eachObject=>{
-                        return(
-                            <div>
-                                <h3>{eachObject.title}</h3>
-                                <h3>{eachObject.price}</h3>
-                                </div>
-                        )
-                    })
-                }
+
+         {
+            this.state.products.map((eachObject)=>{
+                return(
+                    <div key={eachObject.id} >
+                        <ProductListing  data={eachObject} communication={this.childToParent} increment={this.increment}  decrement={this.decrement} />
+
+                        </div>
+                )
+            })
+         }
 
 
+            
             </div>
         )
     }
 }
 export default Products
+
+
+class ProductListing extends Component{
+    render(){
+        console.log("hello productListing",this.props)
+        return(
+            <div>
+                 <h3>{this.props.data.title}</h3>
+                                <h3>{this.props.data.price}</h3>
+                                <button onClick={()=>this.props.increment(this.props.data)}  >+</button>
+                                {/* <h4>{this.props.data.rating.count}</h4> */}
+                                
+                                <button onClick={()=>this.props.decrement(this.props.data)}  >-</button>
+
+            </div>
+
+        )
+    }
+}
+
+
+
+
+// map is used to iterate the array 
+// in react map is mostly used to iterate the ui 
+// map is used to list rendering 
+// when using map in list rendering me must use key prop for the parent 
+
+
+// Tasks:
+// 1. Repeat the class
+// 2. Complete the pending part in class debug the class
+// 3. Give add button to corousel , which adds new image everytime 
+// 4. Take a button and add the circles in the ui based on the button click 
+
+
