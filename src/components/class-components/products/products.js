@@ -74,22 +74,28 @@ class Products extends Component{
 
     increment =(data)=>{
         console.log(data,this.state.products)
-    
-        let result = this.state.products.map(element => {
-            if (element.id === data.id) {
-        
-                return { ...element, rating: { ...element.rating, count: element.rating.count + 1 } };
-            } else {
-                return element;
+
+        let result=this.state.products.map((eachObject)=>{
+            if(eachObject.id===data.id){
+                let newObject={...eachObject,rating:{
+                    ...eachObject.rating,count:eachObject.rating.count+1
+                }}
+                return newObject
+            }else{
+                return eachObject
             }
-        });
+        })
+        console.log(result,"reselt logged")
+     this.setState({
+        products:result
+     })
         
         
-        this.setState({
-            products: result
-        }, () => {
-            // Optional callback after state is updated
-        });
+        // this.setState({
+        //     products: result
+        // }, () => {
+        //     // Optional callback after state is updated
+        // });
         
 
     }
@@ -129,6 +135,7 @@ class ProductListing extends Component{
             <div>
                  <h3>{this.props.data.title}</h3>
                                 <h3>{this.props.data.price}</h3>
+                                <h3> Count -----{this.props.data.rating.count}</h3>
                                 <button onClick={()=>this.props.increment(this.props.data)}  >+</button>
                                 {/* <h4>{this.props.data.rating.count}</h4> */}
                                 
@@ -154,5 +161,71 @@ class ProductListing extends Component{
 // 2. Complete the pending part in class debug the class
 // 3. Give add button to corousel , which adds new image everytime 
 // 4. Take a button and add the circles in the ui based on the button click 
+
+
+// Tasks:
+// 1. Repeat the class 
+// 2. Organise your work 
+// 3. Decrement the count , reset the count , based on the count show the price 
+// 4. delete the product in the listing 
+
+
+// Class notes 
+
+// let object={
+//     "id":4,
+//     "title":"Mens Casual Slim Fit",
+//     "price":15.99,
+//     "description":"The color could be slightly different between on the screen and in practice. / Please note that body builds vary by person, therefore, detailed size information should be reviewed below on the product description.",
+//     "category":"men's clothing",
+
+//     "rating":{
+//        "rate":2.1,
+//        "count":430
+//     }
+//  }
+ 
+// let newObject={
+// ...object,rating:{
+// ...object.rating,count:object.rating.count+1
+// }
+// }
+// console.log(newObject)
+
+
+// let object={
+//   inner:{
+//     nestedInner:"item10"
+//   }
+// }
+// let newProperty="item11"
+
+// let updatedObject={
+//   ...object,inner:{
+//     ...object.inner,nestedInner:newProperty
+//   }
+// }
+// console.log(updatedObject)
+
+// let updatedObject={
+//   ...object,inner:{...object.inner,
+//   nestedInner:{
+//     ...object.inner.nestedInner,propertyValue:newProperty
+//   }
+// }
+// console.log(updatedObject)
+
+
+// let parentOriginal={
+//   name:"nithin"
+// }
+
+// let parentCopy= {...parentOriginal}
+// parentCopy["salary"]=100000
+
+// console.log(parentCopy)
+// console.log(parentOriginal)
+
+
 
 

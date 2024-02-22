@@ -6,9 +6,9 @@ import NavBar from "./components/functional-components/navBar/nav-bar"
 import Corousel from "./components/functional-components/corousel/corousel"
 import ModalExample from "./components/functional-components/modals/modal"
 import AnimatedToast from "./components/functional-components/toast/toast"
-import ImageComponent from "./components/class-components /image/image-component"
-import YoutubeButton from "./components/class-components /youtubeButton/youtubeButton"
-import Products from "./components/class-components /products/products"
+// import ImageComponent from "./components/class-components /image/image-component"
+// import YoutubeButton from "./components/class-components /youtubeButton/youtubeButton"
+import Products from "./components/class-components/products/products"
 
 
 
