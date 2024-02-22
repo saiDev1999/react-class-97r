@@ -75,24 +75,22 @@ class Products extends Component{
     increment =(data)=>{
         console.log(data,this.state.products)
     
-
-          let result =this.state.products.map(element=>{
-            if(element.id===data.id){
-                return {...this.state.products,price:element.price+100}
-            }else{
-                return element
-            }
-          })
-
+        let result = this.state.products.map(element => {
+            if (element.id === data.id) {
         
-
-
-
-
-       
+                return { ...element, rating: { ...element.rating, count: element.rating.count + 1 } };
+            } else {
+                return element;
+            }
+        });
+        
+        
         this.setState({
-            products:result
-        },()=>{})
+            products: result
+        }, () => {
+            // Optional callback after state is updated
+        });
+        
 
     }
 
