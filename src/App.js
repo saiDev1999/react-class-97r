@@ -9,6 +9,8 @@ import AnimatedToast from "./components/functional-components/toast/toast"
 // import ImageComponent from "./components/class-components /image/image-component"
 // import YoutubeButton from "./components/class-components /youtubeButton/youtubeButton"
 import Products from "./components/class-components/products/products"
+import OrderedList from "./components/functional-components/list/order-list/ordered-list"
+import ProductsApi from "./components/functional-components/axios/products"
 
 
 
@@ -17,7 +19,7 @@ import Products from "./components/class-components/products/products"
 function App(){
   return(
     <div>
-   <Products/>
+<ProductsApi/>
 
 
     </div>
@@ -28,6 +30,33 @@ function App(){
 
 
 export default App
+
+
+
+
+// API : Application programming interface , it acts a middle ware between client side and server side and vice versa
+
+// get request ---> from server to client side data retrieval 
+// post request ---> data from client side to server side 
+// delete request --->  removal of data from server side 
+// put request ---> to update the existing data in sever server 
+// patch request ---->update with nested objects in server 
+
+
+// fetch is a browser web api which to used for making http calls or api calls
+// fetch will return a promise --> we can collect by using .then or by using async and await keywords
+
+// fetch("url",{}).then(res=>res.json()).then(res=>console.log(res)).catch(err=>console.log(err))
+
+// axios
+// axios is a third party library which is used to make http request more effienctly 
+
+// Post man --> it is a tool for testing of api 
+
+
+
+
+
 
 // Component : Component is a reusable bit of code which is responsible for creating user interface
 // every component will return mark up 

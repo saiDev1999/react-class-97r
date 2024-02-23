@@ -1,4 +1,4 @@
-import { Component } from "react";
+import React, { Component } from "react";
 
 
 class Products extends Component{
@@ -105,23 +105,23 @@ class Products extends Component{
     }
     render(){
         return(
-            <div>
+            <React.Fragment>
                 <button  onClick={this.sortFunction} >Sort by price</button>
 
          {
             this.state.products.map((eachObject)=>{
                 return(
-                    <div key={eachObject.id} >
+                    <React.Fragment  key={eachObject.id} >
                         <ProductListing  data={eachObject} communication={this.childToParent} increment={this.increment}  decrement={this.decrement} />
 
-                        </div>
+                        </React.Fragment>
                 )
             })
          }
 
 
             
-            </div>
+            </React.Fragment>
         )
     }
 }
@@ -146,6 +146,16 @@ class ProductListing extends Component{
         )
     }
 }
+
+
+
+// Fragments  or React Fragments ---->   div , article ,nav,section or empty container 
+
+// in React empty container which is represented with <></> empty opening and empty closing tags 
+
+// its one of the optimimization technique
+
+//React.Fragement it will act as a shared parent to obey the jsx first rule 
 
 
 
