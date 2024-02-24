@@ -11,6 +11,7 @@ import AnimatedToast from "./components/functional-components/toast/toast"
 import Products from "./components/class-components/products/products"
 import OrderedList from "./components/functional-components/list/order-list/ordered-list"
 import ProductsApi from "./components/functional-components/axios/products"
+import Mounting from "./components/class-components/lifeCycle/mounting/mountingPhase"
 
 
 
@@ -19,7 +20,7 @@ import ProductsApi from "./components/functional-components/axios/products"
 function App(){
   return(
     <div>
-<ProductsApi/>
+  <Mounting/>
 
 
     </div>
