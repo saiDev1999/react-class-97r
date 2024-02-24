@@ -1,13 +1,4 @@
 
-
-
-
-
-
-
-
-
-
 // earth 
 
 
@@ -23,7 +14,7 @@
 // 1. Constructor --> to create and initilize the state --> mostly used 
 // 2. Render method ---> to keep elements in the dom we need render method --> used 
 // 3. derivedStateFromProps ---> to initialize the state based on initial props ---> rarely used 
-// 4. ComponentDidMount ---> to perform the side effects in class based components --> mostly used
+// 4. ComponentDidMount ---> to perform the side effects in class based components on page load --> mostly used
 
 // side effects examples:
 // 1. Http req (api calls)
