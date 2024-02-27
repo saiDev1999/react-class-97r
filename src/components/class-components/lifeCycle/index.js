@@ -15,6 +15,7 @@
 // 2. Render method ---> to keep elements in the dom we need render method --> used 
 // 3. derivedStateFromProps ---> to initialize the state based on initial props ---> rarely used 
 // 4. ComponentDidMount ---> to perform the side effects in class based components on page load --> mostly used
+// --> only execute once in a lifecycle 
 
 // side effects examples:
 // 1. Http req (api calls)
@@ -29,6 +30,9 @@
 // 2. component did update  ---> to perform the side effects in class based components in updating phase --> used 
 // 3. should component update ---> it decides whether the component has to update or not --> rarely used 
 // 4. getSnapShotBeforeUpdate --> to check the values of state and props before update i can use getSnapShotBeforeUpdate method--> rarely used 
+// 5. derivedStateFromProps
+
+
 // // 3. Unmounting phase
 // 1. Component will unmount --> this method is used for preventing the memory leaks in the component while 
 // removing from dom ---> rarely used , used when required 

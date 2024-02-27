@@ -12,6 +12,10 @@ import Products from "./components/class-components/products/products"
 import OrderedList from "./components/functional-components/list/order-list/ordered-list"
 import ProductsApi from "./components/functional-components/axios/products"
 import Mounting from "./components/class-components/lifeCycle/mounting/mountingPhase"
+import DomManipulation from "./components/class-components/lifeCycle/mounting/dom"
+import UpdatingPhase from "./components/class-components/lifeCycle/updating/stateUpdation"
+import Unmounting from "./components/class-components/lifeCycle/unmounting/unmounting"
+import CirclTask from "./components/class-components/homeWork/CircleTask"
 
 
 
@@ -20,7 +24,11 @@ import Mounting from "./components/class-components/lifeCycle/mounting/mountingP
 function App(){
   return(
     <div>
-  <Mounting/>
+ {/* <DomManipulation  favColor={"blue"} /> */}
+ {/* <UpdatingPhase/> */}
+ {/* <Unmounting/> */}
+ <CirclTask/>
+
 
 
     </div>
