@@ -16,6 +16,8 @@ import DomManipulation from "./components/class-components/lifeCycle/mounting/do
 import UpdatingPhase from "./components/class-components/lifeCycle/updating/stateUpdation"
 import Unmounting from "./components/class-components/lifeCycle/unmounting/unmounting"
 import CirclTask from "./components/class-components/homeWork/CircleTask"
+import ParentComponent from "./components/class-components/pureComponents/parent"
+import { useState } from "react"
 
 
 
@@ -24,10 +26,7 @@ import CirclTask from "./components/class-components/homeWork/CircleTask"
 function App(){
   return(
     <div>
- {/* <DomManipulation  favColor={"blue"} /> */}
- {/* <UpdatingPhase/> */}
- {/* <Unmounting/> */}
- <CirclTask/>
+<ParentComponent/>
 
 
 
@@ -93,6 +92,50 @@ export default App
 
 
 // Babel : it is transpiler which transpiles the jsx code(new synntax) to js code 
+
+
+
+// Class based components --- ui + js layer --> state full components 
+
+// functional based components ---> ui + js layer , 16.8 version , in 2018 -> hooks 
+// state less components, after hooks functional became state full component 
+
+
+
+// react doesnt want to remove class based components 
+// but suggesting to use functional based components 
+
+// hooks : Hooks let you use of state and other react features(life cycle methods) with out writing the class
+
+// examples built in hooks :
+
+// 1. useState 
+// 2. useEffect 
+// 3. useContext 
+// 4. useReducer 
+// 5. useRef
+// 6. useMemo 
+// 7. useCallback
+
+// 8. custom hooks 
+
+//  limitations of hooks 
+
+// 1. Hooks must always call at the top of the component 
+// 2. Hooks must only use in functional based components 
+// 3. Hooks can not be conditional 
+
+// Tasks :
+// 1. Repeat the class (pure components and , can we use pure components for all ?)
+// 2. api call in class based components 3 apis (table,lists, card)
+// 3. which is most popular css framework for react , mention the reasons 
+// 4. why we go for react instead of other tech stack 
+// 5. limitations for react 
+// 6. difference between life cycle methods and hooks 
+
+
+
+
 
 
 
