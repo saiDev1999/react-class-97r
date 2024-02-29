@@ -18,6 +18,9 @@ import Unmounting from "./components/class-components/lifeCycle/unmounting/unmou
 import CirclTask from "./components/class-components/homeWork/CircleTask"
 import ParentComponent from "./components/class-components/pureComponents/parent"
 import { useState } from "react"
+import UseStateExample from "./components/functional-components/hooks/useState/useStateEx1"
+import UseStateExample2 from "./components/functional-components/hooks/useState/useStateEx2"
+import UseStateExample3 from "./components/functional-components/hooks/useState/useStateEx3"
 
 
 
@@ -26,7 +29,9 @@ import { useState } from "react"
 function App(){
   return(
     <div>
-<ParentComponent/>
+{/* <UseStateExample/> */}
+{/* <UseStateExample2/> */}
+<UseStateExample3/>
 
 
 
