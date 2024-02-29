@@ -1,10 +1,5 @@
 import React,{ useState } from "react"
 
-
-
-
-
-
 const UseStateExample3 =()=>{
     const[fruits,setFruits]=useState(["apple","banana","grapes","kiwi"])
 

@@ -21,6 +21,8 @@ import { useState } from "react"
 import UseStateExample from "./components/functional-components/hooks/useState/useStateEx1"
 import UseStateExample2 from "./components/functional-components/hooks/useState/useStateEx2"
 import UseStateExample3 from "./components/functional-components/hooks/useState/useStateEx3"
+import Uncontrolled from "./components/functional-components/forms/uncontrolled"
+import Controlled from "./components/functional-components/forms/controlled"
 
 
 
@@ -31,7 +33,9 @@ function App(){
     <div>
 {/* <UseStateExample/> */}
 {/* <UseStateExample2/> */}
-<UseStateExample3/>
+{/* <UseStateExample3/> */}
+{/* <Uncontrolled/> */}
+<Controlled/>
 
 
 
