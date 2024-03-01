@@ -23,6 +23,10 @@ import UseStateExample2 from "./components/functional-components/hooks/useState/
 import UseStateExample3 from "./components/functional-components/hooks/useState/useStateEx3"
 import Uncontrolled from "./components/functional-components/forms/uncontrolled"
 import Controlled from "./components/functional-components/forms/controlled"
+import UseEffectExample from "./components/functional-components/hooks/useEffect/useEffectEx2"
+import UseEffectEx3 from "./components/functional-components/hooks/useEffect/useEffectEx3"
+import UseEffect4Example from "./components/functional-components/hooks/useEffect/useEffectEx4"
+import UseEffect5 from "./components/functional-components/hooks/useEffect/useEffectEX5"
 
 
 
@@ -31,11 +35,7 @@ import Controlled from "./components/functional-components/forms/controlled"
 function App(){
   return(
     <div>
-{/* <UseStateExample/> */}
-{/* <UseStateExample2/> */}
-{/* <UseStateExample3/> */}
-{/* <Uncontrolled/> */}
-<Controlled/>
+<UseEffect5/>
 
 
 

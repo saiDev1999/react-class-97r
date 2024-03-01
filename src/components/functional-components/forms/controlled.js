@@ -1,101 +1,94 @@
 import { useState } from "react"
 
+const Controlled = () => {
+    const [username, setUserName] = useState("")
+    const [password, setPassword] = useState("")
+    const [usernameError, setUserNameError] = useState(null)
 
 
+    const usernameHandler = (event) => {
 
+        let usernameInput = event.target.value
 
-
-
-
-
-const Controlled =()=>{
-    const [username,setUserName]=useState("")
-    const [password,setPassword]=useState("")
-    const[usernameError,setUserNameError]=useState(null)
-
-
-    const usernameHandler=(event)=>{
-
-        let usernameInput=event.target.value
         setUserName(usernameInput)
-        if(usernameInput.length>5){
-               showError()
-        }else{
+        if (usernameInput.length > 5) {
+            showError()
+        } else {
             setUserNameError(null)
         }
 
 
     }
 
-    const showError=()=>{
+    const showError = () => {
         setUserNameError("username must be less than 5 characters")
     }
-    const passwordHandler=(event)=>{
+    const passwordHandler = (event) => {
 
-        let passwordInput=event.target.value
+        let passwordInput = event.target.value
         setPassword(passwordInput)
-        if(passwordInput.length>5){
-        
-        }else{
+        if (passwordInput.length > 5) {
+
+        } else {
             setUserNameError(null)
         }
 
 
     }
-      
 
 
-    return(
+
+    return (
         <>
-        <h1>Controlled components</h1>
-        <form action="/action_page.php">
-  <div className="mb-3 mt-3">
-    <label htmlFor="email" className="form-label">
-      Email:
-    </label>
-    <input
-      type="text"
-      className="form-control"
-      id="email"
-      placeholder="Enter email"
-      name="email"
-      value={username}
-      onChange={usernameHandler}
-      style={{border:usernameError ?  "2px solid red":"0px"}}
-    />
-    {
-        usernameError 
-        &&
-        <span style={{color:"red"}} > {usernameError}</span>
-     
+            <h1>Controlled components</h1>
+            <form action="/action_page.php">
+                <div className="mb-3 mt-3">
+                    <label htmlFor="email" className="form-label">
+                        Email:
+                    </label>
+                    <input
+                        type="text"
+                        className="form-control"
+                        id="email"
+                        placeholder="Enter email"
+                        name="email"
+                        value={username}
+                        onChange={usernameHandler}
+                        style={{ border: usernameError ? "2px solid red" : "0px" }}
+                    />
+                    {
+                        usernameError
+                        &&
+                        <span style={{ color: "red" }} > {usernameError}</span>
 
-    }
 
-  </div>
-  <div className="mb-3">
-    <label htmlFor="pwd" className="form-label">
-      Password:
-    </label>
-    <input
-      type="password"
-      className="form-control"
-      id="pwd"
-      placeholder="Enter password"
-      name="pswd"
-      value={password}
-      onChange={passwordHandler}
-    />
-  </div>
-  <div className="form-check mb-3">
-    {/* <label className="form-check-label">
+                    }
+
+                </div>
+                <div className="mb-3">
+                    <label htmlFor="pwd" className="form-label">
+                        Password:
+                    </label>
+                    <input
+                        type="password"
+                        className="form-control"
+                        id="pwd"
+                        placeholder="Enter password"
+                        name="pswd"
+                        value={password}
+                        onChange={passwordHandler}
+                    />
+                </div>
+                <div className="form-check mb-3">
+                    {/* <label className="form-check-label">
       <input className="form-check-input" type="checkbox" name="remember" />{" "}
       Remember me
     </label> */}
-  </div>
-  <button type="submit" className="btn btn-primary">
-    Submit
-  </button>
-</form>
+                </div>
+                <button type="submit" className="btn btn-primary">
+                    Submit
+                </button>
+            </form>
 
         </>
     )
@@ -118,7 +111,6 @@ export default Controlled
 
 
 // Tasks :
-
 // 1. Repeat the class 
 // 2. Registration form --> email ,phone number , password , confirm pasword , radio , select 
 // 3. push the registartion details to local storage 
