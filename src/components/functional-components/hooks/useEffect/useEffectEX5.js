@@ -1,13 +1,6 @@
 import { useEffect } from "react"
 
-
-
-
-
-
 const UseEffect5 =()=>{
-
-      
      useEffect(()=>{
       window.addEventListener("mousemove",callbackFunction)
 

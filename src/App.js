@@ -27,6 +27,7 @@ import UseEffectExample from "./components/functional-components/hooks/useEffect
 import UseEffectEx3 from "./components/functional-components/hooks/useEffect/useEffectEx3"
 import UseEffect4Example from "./components/functional-components/hooks/useEffect/useEffectEx4"
 import UseEffect5 from "./components/functional-components/hooks/useEffect/useEffectEX5"
+import NavigationStack from "./navigation/navigation"
 
 
 
@@ -35,8 +36,7 @@ import UseEffect5 from "./components/functional-components/hooks/useEffect/useEf
 function App(){
   return(
     <div>
-<UseEffect5/>
-
+ <NavigationStack/>
 
 
     </div>
@@ -47,6 +47,11 @@ function App(){
 
 
 export default App
+
+// React-Router-dom 
+// 2types of routing 
+// 1. static routing --> fixed routing
+// 2. dynamic routing ---> based on id 
 
 
 
