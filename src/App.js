@@ -1,37 +1,5 @@
-import FancyText from "./components/functional-components/styles/text"
-import "./App.css"
-import Content from "./components/functional-components/styles/bootstrap/content"
-import Spinner from "./components/functional-components/spinner/spinner"
-import NavBar from "./components/functional-components/navBar/nav-bar"
-import Corousel from "./components/functional-components/corousel/corousel"
-import ModalExample from "./components/functional-components/modals/modal"
-import AnimatedToast from "./components/functional-components/toast/toast"
-// import ImageComponent from "./components/class-components /image/image-component"
-// import YoutubeButton from "./components/class-components /youtubeButton/youtubeButton"
-import Products from "./components/class-components/products/products"
-import OrderedList from "./components/functional-components/list/order-list/ordered-list"
-import ProductsApi from "./components/functional-components/axios/products"
-import Mounting from "./components/class-components/lifeCycle/mounting/mountingPhase"
-import DomManipulation from "./components/class-components/lifeCycle/mounting/dom"
-import UpdatingPhase from "./components/class-components/lifeCycle/updating/stateUpdation"
-import Unmounting from "./components/class-components/lifeCycle/unmounting/unmounting"
-import CirclTask from "./components/class-components/homeWork/CircleTask"
-import ParentComponent from "./components/class-components/pureComponents/parent"
-import { useState } from "react"
-import UseStateExample from "./components/functional-components/hooks/useState/useStateEx1"
-import UseStateExample2 from "./components/functional-components/hooks/useState/useStateEx2"
-import UseStateExample3 from "./components/functional-components/hooks/useState/useStateEx3"
-import Uncontrolled from "./components/functional-components/forms/uncontrolled"
-import Controlled from "./components/functional-components/forms/controlled"
-import UseEffectExample from "./components/functional-components/hooks/useEffect/useEffectEx2"
-import UseEffectEx3 from "./components/functional-components/hooks/useEffect/useEffectEx3"
-import UseEffect4Example from "./components/functional-components/hooks/useEffect/useEffectEx4"
-import UseEffect5 from "./components/functional-components/hooks/useEffect/useEffectEX5"
+
 import NavigationStack from "./navigation/navigation"
-
-
-
-
 
 function App(){
   return(
