@@ -16,6 +16,22 @@ function App(){
 
 export default App
 
+
+// props Drilling : Prop drilling is basically a situation where data has to be pass through a nested levels to 
+// reach the final component 
+
+
+//  state management :
+//  local state management --> if the State is managed with in component we call it as a local state management
+//  global state management --> if the state managed globally , we call it as a global state management
+
+//  to eliminate the prop drilling we need manage the state globally 
+
+//  1.context api ---> medium level application 
+//  2. redux ---> for larger level application we can prefer redux (which enables more features and its powerful)
+
+
+
 // React-Router-dom 
 // 2types of routing 
 // 1. static routing --> fixed routing
