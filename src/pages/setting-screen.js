@@ -1,6 +1,7 @@
 import { useContext } from "react"
 import Header from "../components/functional-components/navBar/header"
 import { UserDetails } from "../navigation/navigation"
+import ParentMemo from "../components/functional-components/memo/parent"
 
 
 
@@ -12,6 +13,7 @@ const SettingScreen =()=>{
         <>
         <Header/>
         <h2>Setting screen {userInfo.username}</h2>
+        <ParentMemo/>
         
         </>
     )
