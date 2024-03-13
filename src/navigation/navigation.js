@@ -2,12 +2,14 @@ import { BrowserRouter } from "react-router-dom"
 import PostRoute from "./postRoutes/post-route"
 import PreRoute from "./preRoutes/pre-route"
 import { createContext, useState } from "react"
+import HomeScreen from "../pages/home-screen"
 
 
 export const UserDetails=createContext()
 
 const NavigationStack =()=>{
     const[username,setUserName]=useState("Dheeraj")
+    const [login,setLogin]=useState(false)
 
     const changeName=()=>{
         setUserName("hello")
@@ -20,7 +22,7 @@ const NavigationStack =()=>{
             changeName
         }} >
         {
-            true
+            login
             ?
             <PostRoute/>
             :
@@ -35,6 +37,13 @@ const NavigationStack =()=>{
 }
 
 export default NavigationStack
+
+
+// Tasks:
+// 1. Repeat the class
+// 2. navigate the user if entered right details show the HomeScreen
+// 3. date sub objects 
+
 
 
 // 1. identify the data to be forwarded , for wrapping 

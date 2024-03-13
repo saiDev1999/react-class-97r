@@ -11,11 +11,11 @@ const Controlled = () => {
         let usernameInput = event.target.value
 
         setUserName(usernameInput)
-        if (usernameInput.length > 5) {
-            showError()
-        } else {
-            setUserNameError(null)
-        }
+        // if (usernameInput.length > 5) {
+        //     showError()
+        // } else {
+        //     setUserNameError(null)
+        // }
 
 
     }
@@ -27,13 +27,40 @@ const Controlled = () => {
 
         let passwordInput = event.target.value
         setPassword(passwordInput)
-        if (passwordInput.length > 5) {
+        // if (passwordInput.length > 5) {
 
-        } else {
-            setUserNameError(null)
-        }
+        // } else {
+        //     setUserNameError(null)
+        // }
 
 
+    }
+
+    const handleSubmit=(event)=>{
+        event.preventDefault()
+        console.log(username,password)
+        // username: 'kminchelle',
+        // password: '0lelplR',
+        postData(
+            {
+                username:username,
+                password:password
+            }
+        )
+    }
+
+    const postData=(data)=>{
+        fetch('https://dummyjson.com/auth/login', {
+  method: 'POST',
+  headers: { 'Content-Type': 'application/json' },
+  body: JSON.stringify({
+    username:username,
+    password:password
+  })
+})
+.then(res => res.json())
+.then(res=>console.log(res));
+            
     }
 
 
@@ -41,7 +68,7 @@ const Controlled = () => {
     return (
         <>
             <h1>Controlled components</h1>
-            <form action="/action_page.php">
+            <form  onSubmit={handleSubmit} >
                 <div className="mb-3 mt-3">
                     <label htmlFor="email" className="form-label">
                         Email:
